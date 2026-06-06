@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reportar Incidente</title>
+</head>
+<body>
+
+<header>
+    <h1>Sistema Help Desk</h1>
+    <p>Registro de Incidentes</p>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="reportar.html">Reportar Incidente</a></li>
+        <li><a href="tickets.html">Tickets Registrados</a></li>
+    </ul>
+</nav>
+
+<main>
+
+    <section>
+        <h2>Formulario de Reporte</h2>
+
+        <article>
+            <h3>Registro de Incidentes</h3>
+
+            <form>
+
+                <label for="titulo">Título del Incidente:</label><br>
+                <input type="text" id="titulo" name="titulo" required>
+
+                <br><br>
+
+                <label for="categoria">Categoría:</label><br>
+
+                <select id="categoria" name="categoria" required>
+                    <option value="">Seleccione una categoría</option>
+                    <option value="red">Red</option>
+                    <option value="hardware">Hardware</option>
+                    <option value="software">Software</option>
+                </select>
+
+                <br><br>
+
+                <label>Prioridad:</label><br>
+
+                <input type="radio" id="alta" name="prioridad" value="Alta">
+                <label for="alta">Alta</label>
+
+                <input type="radio" id="media" name="prioridad" value="Media">
+                <label for="media">Media</label>
+
+                <input type="radio" id="baja" name="prioridad" value="Baja">
+                <label for="baja">Baja</label>
+
+                <br><br>
+
+                <label for="descripcion">Descripción:</label><br>
+
+                <textarea id="descripcion"
+                          name="descripcion"
+                          rows="5"
+                          cols="50"
+                          required></textarea>
+
+                <br><br>
+
+                <button type="submit">
+                    Enviar Ticket
+                </button>
+
+            </form>
+
+        </article>
+
+    </section>
+
+</main>
+
+<footer>
+    <p>Universidad Técnica de Manabí</p>
+    <p>&copy; 2026 Sistema Help Desk</p>
+</footer>
+
+</body>
+</html>
