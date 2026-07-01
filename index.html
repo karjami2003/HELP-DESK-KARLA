@@ -3,65 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Help Desk - Inicio</title>
+    <title>Design System - Help Desk</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header>
-    <h1>Sistema Help Desk</h1>
-    <p>Gestión de Incidentes para Infraestructura Tecnológica</p>
+    <h1>Design System - Help Desk</h1>
+    <p>Biblioteca de Componentes UI</p>
 </header>
 
-<nav>
-    <ul>
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="reportar.html">Reportar Incidente</a></li>
-        <li><a href="tickets.html">Tickets Registrados</a></li>
-    </ul>
-</nav>
+<section class="container">
 
-<main>
+    <h2>Botones</h2>
 
-    <section>
-        <h2>Bienvenidos</h2>
-        <img src="/assets/img/compu.png"
-         alt="Sistema Help Desk"
-         width="200">
+    <button class="btn btn-primary">Botón Primario</button>
 
+    <button class="btn btn-secondary">Botón Secundario</button>
 
-        <p>
-            Bienvenido al Sistema Help Desk. Esta plataforma permite registrar,
-            gestionar y dar seguimiento a incidentes relacionados con hardware,
-            software y redes.
-        </p>
-    </section>
+    <button class="btn btn-danger">Botón Peligro</button>
 
-    <section>
-        <h2>Resumen del Sistema</h2>
+    <hr>
 
-        <article>
-            <h3>Registro de Incidentes</h3>
-            <p>Permite reportar fallos técnicos y solicitudes de soporte.</p>
-        </article>
+    <h2>Formulario</h2>
 
-        <article>
-            <h3>Asignación de Técnicos</h3>
-            <p>Los incidentes son asignados al personal especializado.</p>
-        </article>
+    <input type="text" placeholder="Ingrese su nombre">
 
-        <article>
-            <h3>Seguimiento de Tickets</h3>
-            <p>Facilita el monitoreo del estado de cada solicitud.</p>
-        </article>
+    <br><br>
 
-    </section>
+    <select>
+        <option>Seleccione prioridad</option>
+        <option>Alta</option>
+        <option>Media</option>
+        <option>Baja</option>
+    </select>
 
-</main>
+    <hr>
 
-<footer>
-    <p>Universidad Técnica de Manabí</p>
-    <p>&copy; 2026 Sistema Help Desk</p>
-</footer>
+    <h2>Tarjeta</h2>
+
+    <div class="card">
+        <h3>Ticket #001</h3>
+        <p>Error al iniciar sesión del usuario.</p>
+
+        <span class="badge alta">Alta</span>
+    </div>
+
+    <hr>
+
+    <h2>Badges</h2>
+
+    <span class="badge alta">Alta</span>
+
+    <span class="badge media">Media</span>
+
+    <span class="badge baja">Baja</span>
+
+</section>
 
 </body>
 </html>
+
+<footer>
+    <p>Design System - Help Desk © 2026</p>
+    <p>Desarrollado por Karla Moreira</p>
+</footer>
