@@ -3,68 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Design System - Help Desk</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Help Desk - Inicio</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- UI KIT -->
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
-<header>
-    <h1>Design System - Help Desk</h1>
-    <p>Biblioteca de Componentes UI</p>
-</header>
+<!-- NAV RESPONSIVE -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">💻 Help Desk</a>
 
-<section class="container">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-    <h2>Botones</h2>
+        <div class="collapse navbar-collapse" id="menu">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link" href="reportar.html">Reportar</a></li>
+                <li class="nav-item"><a class="nav-link" href="tickets.html">Tickets</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
 
-    <button class="btn btn-primary">Botón Primario</button>
+<!-- CONTENIDO -->
+<main class="container mt-4">
 
-    <button class="btn btn-secondary">Botón Secundario</button>
+    <div class="card p-4 shadow-sm pink-card">
+        <h1 class="text-center">Bienvenida al Sistema Help Desk 💖</h1>
 
-    <button class="btn btn-danger">Botón Peligro</button>
+        <img src="/assets/img/compu.png" class="img-fluid rounded mt-3" alt="Help Desk">
 
-    <hr>
-
-    <h2>Formulario</h2>
-
-    <input type="text" placeholder="Ingrese su nombre">
-
-    <br><br>
-
-    <select>
-        <option>Seleccione prioridad</option>
-        <option>Alta</option>
-        <option>Media</option>
-        <option>Baja</option>
-    </select>
-
-    <hr>
-
-    <h2>Tarjeta</h2>
-
-    <div class="card">
-        <h3>Ticket #001</h3>
-        <p>Error al iniciar sesión del usuario.</p>
-
-        <span class="badge alta">Alta</span>
+        <p class="mt-3">
+            Sistema para gestionar incidentes de hardware, software y red de forma eficiente.
+        </p>
     </div>
 
-    <hr>
+    <!-- GRID RESPONSIVE -->
+    <section class="row mt-4 g-3">
 
-    <h2>Badges</h2>
+        <div class="col-md-4">
+            <div class="card p-3 h-100">
+                <h2>📌 Registro</h2>
+                <p>Reporta incidentes fácilmente.</p>
+            </div>
+        </div>
 
-    <span class="badge alta">Alta</span>
+        <div class="col-md-4">
+            <div class="card p-3 h-100">
+                <h2>⚙️ Gestión</h2>
+                <p>Asignación automática de técnicos.</p>
+            </div>
+        </div>
 
-    <span class="badge media">Media</span>
+        <div class="col-md-4">
+            <div class="card p-3 h-100">
+                <h2>📊 Seguimiento</h2>
+                <p>Monitoreo en tiempo real de tickets.</p>
+            </div>
+        </div>
 
-    <span class="badge baja">Baja</span>
+    </section>
 
-</section>
+</main>
+
+<footer>
+    <p>Universidad Técnica de Manabí</p>
+    <p>&copy; 2026 Sistema Help Desk</p>
+    <p> Moreira Delgado Karla Jamileth</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
-
-<footer>
-    <p>Design System - Help Desk © 2026</p>
-    <p>Desarrollado por Karla Moreira</p>
-</footer>

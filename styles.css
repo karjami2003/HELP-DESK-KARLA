@@ -1,0 +1,160 @@
+:root{
+    --primary:#ff4da6;
+    --secondary:#6b7280;
+    --bg:#fff0f6;
+    --white:#ffffff;
+    --text:#2b2b2b;
+    --card:#ffe6f0;
+}
+
+/* ==========================
+RESET GENERAL
+========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:var(--bg);
+    font-family:Arial, Helvetica, sans-serif;
+    color:var(--text);
+    font-size:18px; /* 🔥 MÁS GRANDE */
+    line-height:1.6;
+}
+
+/* ==========================
+CONTENEDORES
+========================== */
+
+.container{
+    max-width:1100px; /* 🔥 MÁS ANCHO */
+}
+
+/* ==========================
+TÍTULOS
+========================== */
+
+h1,h2,h3,h4{
+    font-weight:700;
+}
+
+h2{
+    font-size:28px;
+}
+
+h3{
+    font-size:22px;
+}
+
+/* ==========================
+CARDS (IMPORTANTE)
+========================== */
+
+.card{
+    border-radius:15px !important;
+    border:none !important;
+    background:var(--card) !important;
+    padding:20px;
+    box-shadow:0 6px 18px rgba(0,0,0,0.1);
+    font-size:17px;
+}
+
+/* tarjeta especial */
+.pink-card{
+    background:linear-gradient(135deg,#ffe6f0,#fff);
+    border-radius:18px;
+}
+
+/* ==========================
+NAVBAR
+========================== */
+
+.navbar{
+    padding:15px;
+}
+
+.navbar-brand{
+    font-weight:bold;
+    font-size:20px;
+}
+
+/* ==========================
+BOTONES
+========================== */
+
+.btn-primary{
+    background:var(--primary) !important;
+    border:none !important;
+    font-size:16px;
+    padding:12px;
+    border-radius:10px;
+}
+
+.btn-primary:hover{
+    background:#e60073 !important;
+}
+
+/* ==========================
+FORMULARIOS
+========================== */
+
+input,
+select,
+textarea{
+    font-size:16px !important;
+    padding:12px !important;
+    border-radius:10px !important;
+}
+
+/* ==========================
+TABLAS
+========================== */
+
+table{
+    font-size:16px;
+}
+
+.table{
+    border-radius:10px;
+    overflow:hidden;
+}
+
+/* ==========================
+FOOTER
+========================== */
+
+footer{
+    margin-top:40px;
+    padding:25px;
+    text-align:center;
+    background:var(--primary);
+    color:white;
+    border-radius:10px;
+    font-size:16px;
+}
+
+/* ==========================
+RESPONSIVE REAL
+========================== */
+
+@media(max-width:768px){
+
+    body{
+        font-size:16px; /* no se encoge demasiado */
+    }
+
+    h2{
+        font-size:22px;
+    }
+
+    .card{
+        padding:15px;
+    }
+
+    .navbar-nav{
+        text-align:center;
+    }
+}
